@@ -9,11 +9,11 @@ Code & Notes : </br>
 Assignments : </br>
 <https://elzero.org/category/assignments/javascript-bootcamp-assignments/>
 
-</br>
+<!-- </br>
 
 ---
 
-</br>
+</br> -->
 
 ## What can JS do?
 
