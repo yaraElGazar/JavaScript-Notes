@@ -9,11 +9,11 @@ Code & Notes : </br>
 Assignments : </br>
 <https://elzero.org/category/assignments/javascript-bootcamp-assignments/>
 
-<!-- </br>
+</br>
 
 ---
 
-</br> -->
+</br>
 
 ## What can JS do?
 
@@ -79,11 +79,11 @@ console.log(
 // %c is called Directive, it specifies the words that will take the style
 ```
 
-<!-- </br>
+</br>
 
 ---
 
-</br> -->
+</br>
 
 ## Web API
 
