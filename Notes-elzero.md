@@ -13,8 +13,6 @@ Assignments : </br>
 
 ---
 
-</br>
-
 ## What can JS do?
 
 1. Dynamically update content
