@@ -27,8 +27,6 @@ Assignments : </br>
 
 ---
 
-</br>
-
 ## Where to put the \<script> tag ?
 
 We have 2 ways </br>
@@ -56,8 +54,6 @@ window.onload = function () {
 
 ---
 
-</br>
-
 ## Console
 
 ```javascript
@@ -80,8 +76,6 @@ console.log(
 </br>
 
 ---
-
-</br>
 
 ## Web API
 
