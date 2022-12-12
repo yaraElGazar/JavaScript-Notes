@@ -79,11 +79,11 @@ console.log(
 // %c is called Directive, it specifies the words that will take the style
 ```
 
-</br>
+<!-- </br>
 
 ---
 
-</br>
+</br> -->
 
 ## Web API
 
