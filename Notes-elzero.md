@@ -90,3 +90,54 @@ A Web API is an application programming interface for the Web.
 A Browser API can extend the functionality of a web browser.
 
 A Server API can extend the functionality of a web server.
+
+</br>
+
+---
+
+## Variables
+
+1.
+
+```js
+// HTML
+<div id="hello"> Hello world! </div>;
+
+// JS
+hello.innerHTML = "Hello updated!";
+
+/*When you use an id, a global variable is created with the same name*/
+```
+
+2.
+
+```js
+/* When you use var for variable declaration the variable is added to the window object => Causes variable scope drama */
+
+var x = 10;
+console.log(window.x); //10
+```
+
+</br>
+
+---
+
+## Template Literals
+
+```js
+/* Can be used to write HTML elements in an efficient way */
+
+let title = "Elzero";
+let desc = "Elzero Web School";
+
+let markup = `
+  <div class="card">
+    <div class="child">
+      <h2>${title}</h2>
+      <p>${desc}</p>
+    </div>
+  </div>
+`;
+
+document.write(markup);
+```
