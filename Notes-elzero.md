@@ -141,3 +141,27 @@ let markup = `
 
 document.write(markup);
 ```
+
+</br>
+
+---
+
+## Unary operators
+
+```js
+/* Can be used to convert strings or any type of data to numbers */
+
+console.log(+100); // 100
+console.log(+"100"); // 100
+console.log(+"-100"); // -100
+console.log(+"Osama"); // NaN
+console.log(+"15.5"); // 15.5
+console.log(+0xff); // 255
+console.log(+null); // 0
+console.log(+false); // 0
+console.log(+true); // 1
+
+// Another way to convert strings to numbers is the Number() constructor
+
+console.log(Number("100")); // 100
+```
