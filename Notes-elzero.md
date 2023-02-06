@@ -165,3 +165,42 @@ console.log(+true); // 1
 
 console.log(Number("100")); // 100
 ```
+
+</br>
+
+---
+
+## Number
+
+```js
+/*Numbers in JS are stored as double precision*/
+
+/*Syntactic sugar -> using '_' to display numbers in a more descriptive way for the developers*/
+
+cosole.log("1_000_000"); // 1000000
+
+/*Number methods*/
+// Two dots (one for float and the other for the method) to call the method or paranthesis
+
+// 1) .toString()
+console.log((100).toString()); // 100
+
+// 2) .toFixed() -> returns a string
+console.log((100.555556).toFixed(2)); // 100.56
+
+// 3) parseInt()/ parseFloat()
+console.log(parseInt("100")); // 100
+console.log(parseInt("x 100")); // NaN
+console.log(parseInt("100 x")); // 100
+console.log(parseInt("100.5")); // 100
+console.log(parseFloat("100.5")); // 100.5
+
+// 4) Number.isIntger()
+console.log(Number.isInteger("100")); // false
+console.log(Number.isInteger(100.5)); // false
+console.log(Number.isInteger(100)); // true
+
+// 5) Number.isNaN() -> true only if JS returns NaN
+console.log(Number.isNaN("Osama")); // false
+console.log(Number.isNaN("Osama" / 20)); // false
+```
