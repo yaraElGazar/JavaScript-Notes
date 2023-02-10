@@ -204,3 +204,14 @@ console.log(Number.isInteger(100)); // true
 console.log(Number.isNaN("Osama")); // false
 console.log(Number.isNaN("Osama" / 20)); // false
 ```
+
+## Nullish Coalescing Operator And Logical Or
+
+```js
+/* Default values if the variable is falsey */
+let price; // undefined
+console.log(`The Price is ${price || 200}`);
+
+/* Default values if the variable is null or undefined (Nullish Coalescing)*/
+console.log(`The Price is ${price ?? 200}`); // only prints 200 if price is undefined or null
+```
