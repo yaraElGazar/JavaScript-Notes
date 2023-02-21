@@ -215,3 +215,13 @@ console.log(`The Price is ${price || 200}`);
 /* Default values if the variable is null or undefined (Nullish Coalescing)*/
 console.log(`The Price is ${price ?? 200}`); // only prints 200 if price is undefined or null
 ```
+
+## this keyword
+
+```js
+document.getElementById("btn").onclick = function () {
+  console.log(this);
+};
+
+// When the button is clicked, this will refer to the button with the id btn and will print it to the console (can be used if multiple buttons exist and you want to know which one has been clicked)
+```
