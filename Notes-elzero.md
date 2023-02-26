@@ -225,3 +225,19 @@ document.getElementById("btn").onclick = function () {
 
 // When the button is clicked, this will refer to the button with the id btn and will print it to the console (can be used if multiple buttons exist and you want to know which one has been clicked)
 ```
+
+## simulate the events
+
+```js
+let btn = document.getElementById("btn");
+
+btn.addEventListener("click", function () {
+  console.log("clicked");
+});
+
+setTimout(function () {
+  btn.click(); // simulate the click event
+}, 1000);
+
+/* After one second the button is automatically clicked and the event is fired*/
+```
