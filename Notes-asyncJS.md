@@ -108,10 +108,105 @@ Now, you go about preparing your soup but the status on tacos? We can say that i
 you receive that message from your friend<br>
 When you get back a text message saying that he is getting the tacos, your desire to eat tacos has been fulfilled. You can then proceed to set up the table<br>
 the text.message says that he can't bring back any tacos, your desire to have tacos have been rejected and you now have to cook some pasta instead
+
+<br>
+
 ![Promises example](./screenshots/screen1.png)
 
 ```javascript
+// How to create a promise?
+const promise = new Promise();
 
+// How to fulfill or reject the promise?
+/* Promise constructor accepts one function with 2 parameters, resolve and reject which are both functions*/
+
+const promise = new Promise((resolve, reject) => {
+  // Change status from 'pending' to 'fulfilled'
+  resolve();
+});
+
+const promise = new Promise((resolve, reject) => {
+  // Change status from 'pending' to 'rejected'
+  reject();
+});
+
+// both of these function, resolve and reject are typically called after an async operation
+const promise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    // Food truck found,
+    // Change status from pending' to 'fulfilled
+    resolve();
+  }, 5000);
+});
+// How to execute callback functions based on whether the Promise is fulfilled or rejected?
+/*Callback functions*/
+const onFulfillment = () => {
+  // resolve was called
+  console.log("Set up the table to eat tacos");
+};
+const onRejection = () => {
+  // reject was called
+  console.log("Start cooking pasta");
+};
+/*Promise has 2 methods, then() and catch() which accepts the callback functions (as we said callback functions are functions that is passed to another functions as parameters)*/
+
+// Resolve scenariio
+const promise = new Promise ((resolve, reject) => {
+setTimeout (() => {
+// Food truck found
+// Change status from 'pending to 'fulfilled
+resolve()
+}, 5000)
+})
+
+// Reject scenario
+const promise = new Promi se ( (resolve, reject) => {
+setTimeout (() => {
+// Food truck not found
+// Change status fram pending' to 'rejected'
+reject ()
+ }, 5000)
+ })
+
+promise. then(onFulfillment);
+promise. catch(onRejection);
+
+// To send arguments to callback functions pass them through resolve or reject
+
+// Chaining promises:
+Both then and catch methods return promises
+then() and catch() methods can be chained in
+JavaScript
+
+promise.then (onFulfillment) .catch (onRejection)
+```
+
+</br>
+
+---
+
+## Async Await
+
+async: <br>
+
+- The async keyword is used to declare async functions
+- Async functions are functions that are instances of the AsyncFunction constructor
+- Unlike normal functions, async functions always return a promise
+
+await: <br>
+
+- await keyword can be put infront of any async promise based function to pause
+  your code until that promise settles and returns its result
+- await only works inside async functions. Cannot use await in normal functions
+
+```javascript
+async function greet () {
+let promise = new Promise ( (resolve, reject) => {
+setTimeout ( () => resolve ( "Hello"), 1000)
+});
+let result = await promise; // wait until the promise resolves ()
+console.log (result); // "Hello"
+greet()
 ```
 
 </br>
