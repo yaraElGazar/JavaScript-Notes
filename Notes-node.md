@@ -74,3 +74,32 @@ V=> 86 => 01010110
 </br>
 
 ---
+
+# Node.js Notes - Pluralsight
+
+Playlist Link : </br>
+<https://app.pluralsight.com/library/courses/nodejs-getting-started/table-of-contents>
+
+</br>
+
+---
+
+## Node Modules
+
+```javascript
+console.log(arguments);
+// in browser it will print undefined but in node every file is wrapped in a function so arguments here have a value (exports, module, require, __filename, __dirname)
+
+// hidden wrapping function
+(function (exports, module, require, __filename, __dirname) {
+  // code in the node file
+  console.log(arguments);
+
+  // by default the wrapping function returns module.exports
+  return module.exports;
+})(module.exports); // iife
+```
+
+</br>
+
+---
