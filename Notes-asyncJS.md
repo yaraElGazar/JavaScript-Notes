@@ -206,7 +206,7 @@ setTimeout ( () => resolve ( "Hello"), 1000)
 });
 let result = await promise; // wait until the promise resolves ()
 console.log (result); // "Hello"
-greet()
+greet();
 ```
 
 </br>
